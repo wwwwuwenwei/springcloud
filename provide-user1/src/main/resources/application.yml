@@ -1,8 +1,8 @@
 server:
-  port: 7091
+  port: 7093
 spring:
   application:
-    name: provide-user
+    name: provide-user1
 eureka:
   instance:
     prefer-ip-address: true

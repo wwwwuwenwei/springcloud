@@ -1,8 +1,10 @@
 server:
-  port: 7091
+  port: 8900
+user:
+  url: http://localhost:7090/user/
 spring:
   application:
-    name: provide-user
+    name: consumer-order-ribbon
 eureka:
   instance:
     prefer-ip-address: true

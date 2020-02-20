@@ -1,8 +1,10 @@
 server:
-  port: 7091
+  port: 8900
+user:
+  url: http://localhost:7090/user/
 spring:
   application:
-    name: provide-user
+    name: consumer-order-ribbon-config
 eureka:
   instance:
     prefer-ip-address: true
@@ -10,3 +12,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:10000/eureka/
+provide-user1: #服务名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #给指定的服务配置负载均衡算法
