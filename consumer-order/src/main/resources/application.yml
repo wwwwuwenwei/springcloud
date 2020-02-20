@@ -1,0 +1,9 @@
+server:
+  port: 7080
+spring:
+  application:
+    name: consumer-order
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka
