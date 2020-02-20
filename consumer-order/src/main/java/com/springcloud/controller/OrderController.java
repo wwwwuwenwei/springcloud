@@ -26,9 +26,9 @@ public class OrderController {
     @GetMapping("/order/{id}")
     public User getOrder(@PathVariable Long id){
         //访问提供者，获取数据
-//        InstanceInfo instanceInfo = eurekaClient.getNextServerFromEureka("provide-user", false);
-//        String homePageUrl = instanceInfo.getHomePageUrl();
-        User user = restTemplate.getForObject(url+id, User.class);
+        InstanceInfo instanceInfo = eurekaClient.getNextServerFromEureka("provide-user", false);
+        String homePageUrl = instanceInfo.getHomePageUrl();
+        User user = restTemplate.getForObject(homePageUrl+"/user/"+id, User.class);
         //通过访问 Rest 获取 Json 数据，然后转换为 User 对象
         return user;
     }
