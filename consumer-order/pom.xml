@@ -22,6 +22,13 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-openfeign-core</artifactId>
+            <version>2.0.1.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
         <!--&lt;!&ndash;负载均衡&ndash;&gt;-->
         <!--<dependency>-->
         <!--<groupId>org.springframework.cloud</groupId>-->

@@ -1,0 +1,14 @@
+server:
+  port: 8901
+user:
+  url: http://localhost:7090/user/
+spring:
+  application:
+    name: consumer-feign-order
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
