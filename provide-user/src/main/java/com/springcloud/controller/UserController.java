@@ -24,4 +24,10 @@ public class UserController {
     public User getUser(@PathVariable Long id){
         return new User(id);
     }
+
+    @GetMapping("/get-user")
+    public User getPamUser(User user){
+        return user;//相当于我们传的一个复杂参数会被封装为 User 对象
+    }
+
 }
