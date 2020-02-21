@@ -15,8 +15,8 @@
         <module>consumer-order</module>
         <module>consumer-order-ribbon</module>
         <module>consumer-order-ribbon-config</module>
-        <module>consumer-order-feign</module>
         <module>consumer-feign-order</module>
+        <module>consumer-hystrix</module>
     </modules>
 
     <parent>
